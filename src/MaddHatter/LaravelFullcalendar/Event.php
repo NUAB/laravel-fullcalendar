@@ -1,4 +1,6 @@
-<?php namespace MaddHatter\LaravelFullcalendar;
+<?php
+
+namespace MaddHatter\LaravelFullcalendar;
 
 use DateTime;
 
@@ -31,5 +33,4 @@ interface Event
      * @return DateTime
      */
     public function getEnd();
-
 }

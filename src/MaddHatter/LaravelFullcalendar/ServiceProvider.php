@@ -1,4 +1,6 @@
-<?php namespace MaddHatter\LaravelFullcalendar;
+<?php
+
+namespace MaddHatter\LaravelFullcalendar;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
@@ -31,6 +33,4 @@ class ServiceProvider extends BaseServiceProvider
     {
         return ['laravel-fullcalendar'];
     }
-
 }
-

@@ -1,4 +1,6 @@
-<?php namespace MaddHatter\LaravelFullcalendar;
+<?php
+
+namespace MaddHatter\LaravelFullcalendar;
 
 interface IdentifiableEvent extends Event
 {
@@ -9,5 +11,4 @@ interface IdentifiableEvent extends Event
      * @return int|string|null
      */
     public function getId();
-
 }

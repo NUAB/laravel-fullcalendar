@@ -1,8 +1,10 @@
-<?php namespace MaddHatter\LaravelFullcalendar;
+<?php
+
+namespace MaddHatter\LaravelFullcalendar;
 
 use ArrayAccess;
 use DateTime;
-use Illuminate\View\Factory;
+use Illuminate\Contracts\View\Factory;
 
 class Calendar
 {
@@ -122,7 +124,7 @@ class Calendar
      */
     public function getId()
     {
-        if ( ! empty($this->id)) {
+        if (!empty($this->id)) {
             return $this->id;
         }
 
@@ -230,7 +232,6 @@ class Calendar
         }
 
         return $json;
-
     }
 
     /**
@@ -269,5 +270,4 @@ class Calendar
 
         return str_replace($search, $replace, $json);
     }
-
 }
