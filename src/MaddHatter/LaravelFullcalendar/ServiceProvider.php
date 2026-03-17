@@ -15,13 +15,13 @@ class ServiceProvider extends BaseServiceProvider
     public function register()
     {
         $this->app->bind('laravel-fullcalendar', function ($app) {
-            return $app->make('MaddHatter\LaravelFullcalendar\Calendar');
+            return $app->make(Calendar::class);
         });
     }
 
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__ . '/../../views/', 'fullcalendar');
+        $this->loadViewsFrom(__DIR__ . '/../../../views/', 'fullcalendar');
     }
 
     /**

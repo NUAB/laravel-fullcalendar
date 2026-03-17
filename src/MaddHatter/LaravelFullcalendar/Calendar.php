@@ -5,6 +5,7 @@ namespace MaddHatter\LaravelFullcalendar;
 use ArrayAccess;
 use DateTime;
 use Illuminate\Contracts\View\Factory;
+use Illuminate\Support\Str;
 
 class Calendar
 {
@@ -128,7 +129,7 @@ class Calendar
             return $this->id;
         }
 
-        $this->id = str_random(8);
+        $this->id = Str::random(8);
 
         return $this->id;
     }
