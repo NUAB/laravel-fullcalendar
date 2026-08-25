@@ -21,7 +21,7 @@ class ServiceProvider extends BaseServiceProvider
 
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__ . '/../../../views/', 'fullcalendar');
+        $this->loadViewsFrom(__DIR__ . '/../../views/', 'fullcalendar');
     }
 
     /**
